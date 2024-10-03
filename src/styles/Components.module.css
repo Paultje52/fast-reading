@@ -1,0 +1,72 @@
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textarea {
+  width: 90%;
+  padding: 0.5rem;
+  height: 10rem;
+  resize: none;
+  outline: none;
+  margin-top: 0.5rem;
+
+  border: 1px solid #adadad;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+  font-family: "Courier New", Courier, monospace;
+}
+@media only screen and (max-width: 700px) {
+  .textarea {
+    min-width: 80vw;
+  }
+}
+
+.dropzone {
+  width: 90%;
+  height: 10rem;
+  margin-top: 0.5rem;
+
+  border: 1px solid #adadad;
+  border-radius: 0.3rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+.dropzone:hover, .dropzone.active {
+  background-color: #dddddd;
+}
+@media only screen and (max-width: 700px) {
+  .dropzone {
+    min-width: 80vw;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .dropzone {
+    background-color: #3b3b3b;
+  }
+  .dropzone:hover, .dropzone.active {
+    background-color: #242424;
+  }
+}
+
+.error {
+  color: #ff2222;
+}
+.hidden {
+  display: none;
+}
+
+.speedSlider {
+  width: 100%;
+  margin-top: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.speedSlider input[type="range"] {
+  margin: 0 1rem;
+  width: 40vw;
+}

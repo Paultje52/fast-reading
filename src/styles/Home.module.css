@@ -1,0 +1,86 @@
+.container {
+  margin: 20px 5vw;
+  padding-bottom: 3rem;
+}
+
+.title {
+  text-align: center;
+  margin-top: 8vh;
+}
+.title h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 0.9;
+}
+.title p {
+  font-size: 1.3rem;
+  color: #868686;
+}
+@media (prefers-color-scheme: dark) {
+  .title p {
+    color: #adadad;
+  }
+}
+
+.content h2 {
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+.content p {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+.content h3 {
+  margin: 0.6rem 0;
+  margin-top: 1.2rem;
+}
+.content h4 {
+  margin: 0;
+}
+
+.sideBySide {
+  display: flex;
+  padding: 0 1rem;
+}
+.sideBySide > * {
+  min-width: 49%;
+}
+
+@media only screen and (max-width: 700px) {
+  .sideBySide {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .sideBySide > * {
+    margin-bottom: 0.5rem;
+    max-width: 80%;
+  }
+  .dropzone {
+    min-width: 80vw;
+  }
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.button {
+  background-color: #0066ff;
+  color: #ffffff;
+  border-radius: 7px;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color .2s ease-in-out;
+}
+.button:hover {
+  background-color: #0043a7;
+}

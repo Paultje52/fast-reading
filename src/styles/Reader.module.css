@@ -1,0 +1,35 @@
+.loadContainer {
+  padding: 20px 5vw;
+  text-align: center;
+}
+
+.loadContainer>h1 {
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+.container>h1 {
+  width: 30vw;
+  min-width: 30vw;
+  max-width: 30vw;
+}
+
+.currentWord {
+  margin: 1rem;
+  z-index: 2;
+  max-width: fit-content !important;
+}
+
+.previousWord,
+.nextWord {
+  color: #2e2e2e;
+}

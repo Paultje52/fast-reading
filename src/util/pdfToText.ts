@@ -6,7 +6,8 @@ export default async function pdfToText(base64: string): Promise<string> {
   Object.assign(window, { pdfjsWorker });
 
   const data = base64ToBinary(base64);
-  const loadingTask = pdfjsLib.getDocument({ data });
+  const loadingTask = pdfjsLib.getDocument({ data, isEvalSupported: false });
+  
   const pdf = await loadingTask.promise;
 
   const pages = pdf._pdfInfo.numPages;
